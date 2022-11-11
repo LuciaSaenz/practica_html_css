@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALF</title>
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style_main.css">
+</head>
+<body>
+    <nav class="navbar" >
+        <img id="cartoon" class="cartoon" src="https://valenciaplaza.com/public/Image/2020/2/alf1_NoticiaAmpliada.jpg" alt="alf cartoon" width="100px" >
+        <a class="menu" href="#about" target="_self">About</a> 
+        <a class="menu" href="#food" target="_self">Ranking</a>          
+        <a class="menu" href="#contact" target="_self">Contact</a>     
+    </nav>
+    <hr>
+    <header>           
+        <h1>A L F</h1>
+    </header>
+    <main>
+      <figure>
+        <img 
+            id="encabezado" class="encabezado" 
+            src="https://hbomax-images.warnermediacdn.com/images/GYbCHWwbQpcPCwgEAAAJd/tile?size=640x360&partner=hbomaxcom&v=54b0b59ced9aee95a6c77e65bd26fa7e&host=art-gallery.api.hbo.com&language=es-es" 
+            title="alf eating" alt="alf eating" width="700px" >
+      </figure>  
+        <section class="section" id="about" >
+            <h2>About me</h2>
+            My name is Gordon Shumway, but everybody calls me ALF. I am an alien from the planet Melmac, where I was born on the 28th of Nathinganger, or October 28, 1756 according to Earth's calendar.
+            In 1972 I crash-landed my ship into the garage of the Tanner family, after following an amateur radio signal to Earth. The Tanners have been taking care of me ever since.
+            <h2>Food is love. Food is life</h2>
+            <figure>
+                <img src="https://c.tenor.com/looLTXpf4O4AAAAC/alf-dinner.gif" 
+                alt="alf eating" id="eatig" class="gif"   >
+            </figure>            
+            Even though we Melmacians have only four teeth, we LOVE eating. We have very large appetites as we have ten major organs, eight of which are stomachs.            
+            Melmacians are omnivorous and are well known for enjoying any kind of food, including things which are inedible for Humans, such as camera film and polyester. 
+          </section>  
+        <!-- HACERLO CON BARRAS DE PROGRESO -->          
+        <section class="ranking" id="food" >        
+            <h2>Food ranking</h2>
+                <div class="categoria" id="cats" > Cats 😸🙀😿 </div>
+                <div class="barra" id="barra_cats" > </div> 
+                <div class="categoria" id="seafood" > Seafood 🦀🦞🦐 </div>
+                <div class="barra" id="barra_seafood" > </div>
+                <div class="categoria" id="everything" > Everything with everything on it 🍕🍔🐈🌭🌮 </div>
+                <div class="barra" id="barra_everything" > </div>    
+        </section>
+        <section class="section" id="contact" >
+            <h2>Contact form</h2>
+            <!-- ENLACE AL ENVIAR NO FUNCIONA -->
+            <form action="/HTML/confirmation.html">
+              <div>
+                <label for="name">Name</label>
+                <input required id="name" name="name" type="text" placeholder="Your name">
+              </div>
+              <div>
+                <label for="surname">Last Name</label>
+                <input required id="surname" name="surname" type="text" placeholder="Your last name">
+              </div>          
+              <div>
+                <label for="phone">Phone</label>
+                <input type="telephone" id="phone" name="phone" placeholder="Your phone number" pattern="[0-9]+" >
+              </div>
+              <div>
+                <label for="github">Github username</label>
+                <input type="github" id="ghub" name="github" placeholder="@username" pattern="^@[^\s]+" >
+              </div>
+              <label for="bio">How can we help you?</label>
+              <textarea id="bio" maxlength="180"  ></textarea>
+              <fieldset>
+                  <legend>How did you hear about me?</legend>
+                  <label for="uni">University</label>
+                  <input required id="uni" name="how" type="radio" value="university">
+                  <label for="kc">Keppcoding kick-off</label>
+                  <input required id="kc" name="how" type="radio" value="keepcoding">
+                  <label for="school">School</label>
+                  <input required id="school" name="how" type="radio" value="school">
+                  <label for="ghub">Github</label>
+                  <input required id="ghub" name="how" type="radio" value="github">
+              </fieldset>
+              <input type="submit" value="Submit">                              
+        </form> </section>
+      <footer class="footer" >
+        <nav>
+          <a class="link_logo" id="HBO" target="_blank" href="https://www.hbomax.com/es/es/series/urn:hbo:series:GYbCHWwbQpcPCwgEAAAJd?countryRedirect=1" >
+          <img src="https://hbomax-images.warnermediacdn.com/2020-05/square%20social%20logo%20400%20x%20400_0.png" alt="HBO"> 
+         </a>
+          <a class="link_logo" id="AlfWiki" target="_blank" href="https://alf.fandom.com/wiki/ALF_Wiki">         <img src="https://cdn-icons-png.flaticon.com/512/174/174880.png" alt="AlkWiki">
+          </a>           
+        </nav>
+      </footer>
+    </main>  
+</body>
+</html>

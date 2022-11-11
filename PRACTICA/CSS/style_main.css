@@ -1,0 +1,134 @@
+.navbar{
+    background-color: rgb(240, 187, 90);
+    border: 2px solid rgb(0, 0, 0);  
+    margin: 10px 0 0 0;    
+}
+.navbar .menu {
+    text-decoration: none;    
+    color: black;
+    margin-left: 30px;    
+}
+
+header{
+    text-align: center;
+    color: #e0740e;
+    font-size: 1em;
+}
+
+h2{
+    color: #e0740e;
+
+}
+
+.encabezado {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.gif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.barra{    
+    width: 25%;
+    height: 1em;
+    display: flex; 
+    justify-content: center;
+    align-items: top;
+    flex-wrap: wrap; 
+    border: 2px solid rgb(0, 0, 0);  
+    border-radius: 20px;
+}
+
+@keyframes cats {
+    0%{
+        opacity: 0;
+        background-color: #cc9969;
+        width: 5%;
+    }
+    100%{
+        opacity: 1;
+        background-color: #e0740e;
+        width: 50%;
+    }
+}
+
+#barra_cats{
+    animation: cats 5s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes seafood {
+    0%{
+        opacity: 0;
+        background-color: #cc9969;
+        width: 5%;
+    }
+    100%{
+        opacity: 1;
+        background-color: #e0740e;
+        width: 30%;
+    }
+}
+
+#barra_seafood{
+    animation: seafood 5s ;
+    animation-fill-mode: forwards;
+}
+
+@keyframes everything {
+    0%{
+        opacity: 0;
+        background-color: #cc9969;
+        width: 5%;
+    }
+    100%{
+        opacity: 1;
+        background-color: #e0740e;
+        width: 40%;
+    }
+}
+
+#barra_everything{
+    animation: everything 5s ;
+    animation-fill-mode: forwards;
+}
+
+
+
+.footer{
+    background-color: rgb(240, 187, 90);
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);  
+    padding: 10px;
+    margin: 20px 0 20px 0;    
+}
+
+.footer img{    
+    width: 5%;
+    max-width: 80%; 
+    display: inline-block;  
+    flex-wrap: wrap;       
+}
+
+.link_logo{
+    padding: 0 0.5em 0 0.5em;
+}
+
+
+@media screen and (min-width: 992px) {
+    .navbar .menu{
+        transition: color 0.3s linear ;
+    }    
+    .navbar .menu:hover{
+        color: rgb(52, 123, 204);            
+    }
+}
